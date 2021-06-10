@@ -56,8 +56,8 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #030303;
-  background-color: rgb(173, 187, 177);
+  color: #0c0c0c;
+  background-color: rgb(6, 34, 66);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -80,6 +80,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.2;
+ 
 }
 
 h1, .h1 {
@@ -1136,7 +1137,7 @@ progress {
 
   .col-md-4 {
     flex: 0 0 auto;
-    width: 50%;
+    width: 100%;
   }
 
   .col-md-5 {
@@ -2985,7 +2986,7 @@ textarea.form-control-lg {
 }
 .btn-secondary:hover {
   color: #fff;
-  background-color: #5c636a;
+  background-color: #6a615c;
   border-color: #565e64;
 }
 .btn-check:focus + .btn-secondary, .btn-secondary:focus {
@@ -10957,7 +10958,7 @@ header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
-  color: rgb(243, 245, 247);
+  color: rgb(255, 255, 255);
   background-image: url("../assets/img/ed.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11088,6 +11089,7 @@ header.masthead .masthead-heading {
   padding: 0;
   list-style: none;
 }
+
 .timeline:before {
   position: absolute;
   top: 0;
@@ -11271,9 +11273,11 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgb(38, 76, 179)),url("../assets/img/ed.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
 }
 section#contact .section-heading {
   color: #fff;
@@ -11328,4 +11332,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
+.col-lg-4 a{
+  font-size: larger;
+  color: #fff;
+}
